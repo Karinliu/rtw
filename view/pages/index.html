@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Socket.IO chat</title>
+    <link rel=stylesheet href="../styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Raad het dier!</h1>
+        <p class="characters">Het aantal karakters die zijn gebruikt: <span id=charcount>0</span></p>
+        <div id="nickWrap">
+            <p>Enter a username</p>
+            <p id="nickError "></p>
+            <form id="nickForm" action="">
+                <input id="nickName" autocomplete="off" />
+                <button>Send</button>
+            </form>
+        </div>
+        <div class="hidden" id="contentWrap">
+            <p>Om te starten typ: x</p>
+            <table id="words">
+                <tr>
+                    <td id="first"> </td>
+                    <td id="second"> </td>
+                    <td id="third"> </td>
+                    <td id="four"> </td>
+                </tr>
+            </table>
+            <div id="users">
+            </div>
+            <ul id="messages"></ul>
+            <form class="message" action="">
+                <input id="m" autocomplete="off" />
+                <button>Send</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="../index.js"></script>
+
+</html>

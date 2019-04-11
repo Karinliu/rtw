@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font: 1em Helvetica, Arial;
+    background: #bcd6ff;
+}
+
+main{
+    margin: 1em;
+}
+
+h1{
+    text-align: center;
+}
+
+.characters{
+    text-align: center;
+}
+
+.message {
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.message input {
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    margin-right: .5%;
+    font-size: 1em;
+}
+
+.message button {
+    width: 9%;
+    background: #fdb2b2;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+    background: white;
+}
+
+#nickWrap{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background: #d0ffbf;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 15em;
+}
+
+#users{
+    position: absolute;
+    display: block;
+    top: 1em;
+    right: 1em;
+    background: #d0ffbf;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 15em;
+}
+
+.hidden{
+    display: none;
+}
+
+table{
+    margin: 0 auto;
+}
+
+td{
+    font-size: 1.5em;
+}
+
+#nickForm input{
+    font-size: 1em;
+    width: 70%;
+    padding: 6px;
+}
+
+#nickForm button{
+    font-size: 1em;
+    padding: 6px;
+    background: #fdb2b2;
+}
